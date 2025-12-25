@@ -63,3 +63,37 @@ export default function Home() {
     </div>
   );
 }
+
+
+/* import { Button } from "@/components/ui/button";
+
+export default function Home() {
+  return (
+    <main className="flex min-h-screen items-center justify-center">
+      <Button>Meu primeiro botão</Button>
+    </main>
+  );
+}
+ */
+
+/* "use client";
+
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+
+export default function Home() {
+  return (
+    <main className="flex min-h-screen items-center justify-center">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="flex flex-col items-center gap-6"
+      >
+        <h1 className="text-3xl font-bold">Meu Portfólio</h1>
+
+        <Button>Entrar em contato</Button>
+      </motion.div>
+    </main>
+  );
+} */
