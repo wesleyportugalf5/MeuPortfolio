@@ -16,16 +16,22 @@ export default function Projects() {
         "Este site! Um portfólio moderno e responsivo construído com as tecnologias mais recentes.",
       tech: "Next.js, Tailwind CSS, TypeScript",
       image: "/Screenshot_1.png",
+      siteUrl: "https://meu-portfolio-one-gilt.vercel.app/",
+      githubUrl: "https://github.com/wesleyportugalf5/MeuPortfolio",
     },
     {
       title: "Projeto 2",
       description: "Uma solução inovadora para problemas reais.",
       tech: "React, Node.js",
+      siteUrl: "#",
+      githubUrl: "#",
     },
     {
       title: "Projeto 3",
       description: "App mobile revolucionário.",
       tech: "React Native, Firebase",
+      siteUrl: "#",
+      githubUrl: "#",
     },
   ];
 
@@ -60,9 +66,24 @@ export default function Projects() {
                 {project.description}
               </p>
             </CardContent>
-            <CardFooter>
-              <Button variant="secondary" className="w-full">
-                Ver Detalhes
+            <CardFooter className="flex gap-2">
+              <Button asChild className="flex-1">
+                <a
+                  href={project.siteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver Site
+                </a>
+              </Button>
+              <Button variant="outline" asChild className="flex-1">
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver Github
+                </a>
               </Button>
             </CardFooter>
           </Card>
