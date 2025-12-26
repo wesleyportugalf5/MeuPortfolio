@@ -20,11 +20,13 @@ export default function Projects() {
       githubUrl: "https://github.com/wesleyportugalf5/MeuPortfolio",
     },
     {
-      title: "Projeto 2",
-      description: "em andamento",
-      tech: "em andamento",
-      siteUrl: "#",
-      githubUrl: "#",
+      title: "Aparatus",
+      description:
+        "Plataforma de agendamento completa para barbearias com pagamentos integrados e gestão inteligente de horários.",
+      tech: "Next.js, Node.js, TypeScript, Tailwind CSS, shadcn/ui, Stripe",
+      image: "/Screenshot_2.png",
+      siteUrl: "https://aparatus-woad.vercel.app/",
+      githubUrl: "https://github.com/wesleyportugalf5/Aparatus",
     },
     {
       title: "Projeto 3",
@@ -42,7 +44,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <Card
             key={index}
-            className="hover:shadow-lg transition-shadow duration-300"
+            className="hover:shadow-lg transition-shadow duration-300 flex flex-col h-full"
           >
             <CardHeader>
               {project.image ? (
@@ -57,9 +59,11 @@ export default function Projects() {
                 <div className="w-full h-40 bg-black rounded-md mb-4" />
               )}
               <CardTitle>{project.title}</CardTitle>
-              <CardDescription>{project.tech}</CardDescription>
+              <CardDescription className="min-h-[40px]">
+                {project.tech}
+              </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-grow">
               <p className="text-sm text-muted-foreground">
                 {project.description}
               </p>
