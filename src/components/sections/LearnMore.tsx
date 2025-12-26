@@ -21,7 +21,7 @@ export default function LearnMore() {
             <li>React & Next.js 14+</li>
             <li>TypeScript</li>
             <li>Tailwind CSS</li>
-            <li>Framer Motion (opcional para animações extras)</li>
+            <li>Framer Motion (para animações extras)</li>
             <li>Radix UI Primitives (via shadcn/ui)</li>
           </ul>
         </div>

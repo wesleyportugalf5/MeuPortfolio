@@ -11,9 +11,11 @@ import { Button } from "@/components/ui/button";
 export default function Projects() {
   const projects = [
     {
-      title: "Projeto 1",
-      description: "Descrição incrível do projeto 1.",
-      tech: "Next.js, Tailwind",
+      title: "Meu Portfólio",
+      description:
+        "Este site! Um portfólio moderno e responsivo construído com as tecnologias mais recentes.",
+      tech: "Next.js, Tailwind CSS, TypeScript",
+      image: "/Screenshot_1.png",
     },
     {
       title: "Projeto 2",
@@ -37,9 +39,19 @@ export default function Projects() {
             className="hover:shadow-lg transition-shadow duration-300"
           >
             <CardHeader>
-              <div className="w-full h-40 bg-muted rounded-md mb-4 flex items-center justify-center text-muted-foreground">
-                Imagem do Projeto
-              </div>
+              {project.image ? (
+                <div className="w-full h-40 mb-4 overflow-hidden rounded-md">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
+              ) : (
+                <div className="w-full h-40 bg-muted rounded-md mb-4 flex items-center justify-center text-muted-foreground">
+                  Imagem do Projeto
+                </div>
+              )}
               <CardTitle>{project.title}</CardTitle>
               <CardDescription>{project.tech}</CardDescription>
             </CardHeader>
