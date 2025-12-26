@@ -36,7 +36,7 @@ export default function Home({
           Ver Projetos
         </Button>
         <Button
-          onClick={() => onNavigate("Contact")}
+          onClick={() => onNavigate("Contato")}
           variant="outline"
           size="lg"
           className="rounded-full"

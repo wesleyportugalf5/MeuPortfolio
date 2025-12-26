@@ -7,14 +7,13 @@ export default function About() {
         <h2 className="text-3xl font-bold">Sobre Mim</h2>
         <p className="text-muted-foreground">
           Sou um desenvolvedor apaixonado por criar experiências digitais que
-          impactam positivamente a vida das pessoas. Com anos de experiência em
-          desenvolvimento web, foco em criar interfaces limpas, performáticas e
+          impactam positivamente a vida das pessoas. Meu foco é criar interfaces limpas, performáticas e
           acessíveis.
         </p>
         <p className="text-muted-foreground">
-          Quando não estou codando, gosto de contribuir para projetos
-          open-source, ler sobre novas tecnologias e explorar design de
-          interfaces.
+          Estou indo pro 2 ano de Engenharia de Software.
+          Estou determinado a ser o melhor aluno e tirar
+          as melhores notas.
         </p>
       </div>
       <div className="order-1 md:order-2 flex justify-center">

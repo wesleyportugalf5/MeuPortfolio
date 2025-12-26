@@ -21,15 +21,15 @@ export default function Projects() {
     },
     {
       title: "Projeto 2",
-      description: "Uma solução inovadora para problemas reais.",
-      tech: "React, Node.js",
+      description: "em andamento",
+      tech: "em andamento",
       siteUrl: "#",
       githubUrl: "#",
     },
     {
       title: "Projeto 3",
-      description: "App mobile revolucionário.",
-      tech: "React Native, Firebase",
+      description: "Em andamento",
+      tech: "Em andamento",
       siteUrl: "#",
       githubUrl: "#",
     },
@@ -54,9 +54,7 @@ export default function Projects() {
                   />
                 </div>
               ) : (
-                <div className="w-full h-40 bg-muted rounded-md mb-4 flex items-center justify-center text-muted-foreground">
-                  Imagem do Projeto
-                </div>
+                <div className="w-full h-40 bg-black rounded-md mb-4" />
               )}
               <CardTitle>{project.title}</CardTitle>
               <CardDescription>{project.tech}</CardDescription>
