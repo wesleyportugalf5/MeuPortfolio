@@ -2,6 +2,8 @@
 
 Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar meus projetos, habilidades e informações profissionais.
 
+Link: https://meu-portfolio-one-gilt.vercel.app/
+
 ## Tecnologias utilizadas
 
 - **Next.js** – Framework React
