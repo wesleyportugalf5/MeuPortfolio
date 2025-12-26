@@ -1,12 +1,5 @@
-import Main from "@/components/main";
-import Footer from "@/components/footer";
+import Portfolio from "@/components/Portfolio";
 
-export default function Home() {
-  return (
-    <div>
-      <h1>Olá Mundo</h1>
-      <Main />
-      <Footer />
-    </div>
-  );
+export default function Page() {
+  return <Portfolio />;
 }
