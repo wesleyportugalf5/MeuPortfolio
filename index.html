@@ -1,20 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
-        <section>
-            <h1>Desenvolvedor de Software & Estudante de Engenharia de Software</h1>
-            
-        </section>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navegacao">
+      <ul class="menu">
+        <li>
+          <a href="#inicio">Início</a>
+        </li>
+        <li>
+          <a href="#sobre">Sobre</a>
+        </li>
+        <li>
+          <a href="#projetos">Projetos</a>
+        </li>
+        <li>
+          <a href="#contato">Contato</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+      <div>
+        <img
+          src="./img/MinhaFoto.JPEG"
+          alt="Foto de Wesley Portugal"
+          class="foto-perfil"
+        />
+        <h1>Wesley Portugal</h1>
+        <p>Desenvolvedor Full Stack</p>
+      </div>
     </main>
+
+    <section id="sobre" class="sobre">
+      <h2 class="sobre-titulo">Sobre Mim</h2>
+      <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+          Estudante de Engenharia de Software, com interesse em desenvolvimento
+          de software, gestão de projetos, tecnologia e melhoria contínua de
+          processos. Possuo vivência em projetos de desenvolvimento de software,
+          atuando desde o planejamento até a entrega, com experiência em
+          organização de tarefas, versionamento, integração de sistemas e uso de
+          metodologias modernas. Participei de bootcamps e formações práticas em
+          desenvolvimento backend e full stack, trabalhando com APIs, bancos de
+          dados e deploy em nuvem. Tenho perfil analítico, senso de
+          responsabilidade, boa comunicação e facilidade para aprender novas
+          ferramentas e processos. Minha experiência profissional em ambientes
+          operacionais contribuiu para o desenvolvimento de disciplina, trabalho
+          em equipe, organização, foco em resultados e cumprimento de prazos.
+        </p>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2 class="projetos-titulo">Meus Projetos</h2>
+
+      <div class="projetos-caixa">
+        <div class="projetos-card">
+          <img
+            src="./img/AllBlack.png"
+            alt="Projeto 2"
+            class="projetos-imagem"
+          />
+          <h3 class="info-projetos">Quiz Inglês</h3>
+          <p class="paragrafo-projetos">
+            Jogo de perguntas e respostas para estudar inglês
+          </p>
+        </div>
+
+        <div class="projetos-card">
+          <img
+            src="./img/AllBlack.png"
+            alt="Projeto 2"
+            class="projetos-imagem"
+          />
+          <h3 class="info-projetos">Automação Python</h3>
+          <p class="paragrafo-projetos">Automatização de processos em Python</p>
+        </div>
+
+        <div class="projetos-card">
+          <img
+            src="./img/AllBlack.png"
+            alt="Projeto 2"
+            class="projetos-imagem"
+          />
+          <h3 class="info-projetos">Nutrição Todo Dia</h3>
+          <p class="paragrafo-projetos">Site com dicas de alimentação.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+      <h2 class="contatos-titulo">Contatos</h2>
+      <form class="formulario-contato" id="formulario">
+        <div class="grupo-form">
+          <input placeholder="Nome" class="campo-form"/>
+        </div>
+        <div class="grupo-form">
+          <textarea class="text-form" placeholder="Digite sua Mensagem"></textarea>
+        </div>
+      </form>
+    </section>
+
     <footer>
-        <p>Site criado por Wesley Portugal</p>
+      <p>Site criado por Wesley Portugal</p>
     </footer>
-</body>
+  </body>
 </html>
