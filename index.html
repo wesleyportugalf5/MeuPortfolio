@@ -3,23 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Meu Portfólio</title>
   </head>
   <body>
     <nav class="navegacao">
       <ul class="menu">
         <li>
-          <a href="#inicio">Início</a>
+          <a href="#inicio" class="menu-link">Início</a>
         </li>
         <li>
-          <a href="#sobre">Sobre</a>
+          <a href="#sobre" class="menu-link">Sobre</a>
         </li>
         <li>
-          <a href="#projetos">Projetos</a>
+          <a href="#projetos" class="menu-link">Projetos</a>
         </li>
         <li>
-          <a href="#contato">Contato</a>
+          <a href="#contato" class="menu-link">Contato</a>
         </li>
       </ul>
     </nav>
@@ -32,7 +32,7 @@
           class="foto-perfil"
         />
         <h1>Wesley Portugal</h1>
-        <p>Desenvolvedor Full Stack</p>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack</p>
       </div>
     </main>
 
@@ -66,10 +66,12 @@
             alt="Projeto 2"
             class="projetos-imagem"
           />
-          <h3 class="info-projetos">Quiz Inglês</h3>
-          <p class="paragrafo-projetos">
-            Jogo de perguntas e respostas para estudar inglês
-          </p>
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Quiz Inglês</h3>
+            <p class="paragrafo-projetos">
+              Jogo de perguntas e respostas para estudar inglês
+            </p>
+          </div>
         </div>
 
         <div class="projetos-card">
@@ -78,8 +80,10 @@
             alt="Projeto 2"
             class="projetos-imagem"
           />
-          <h3 class="info-projetos">Automação Python</h3>
-          <p class="paragrafo-projetos">Automatização de processos em Python</p>
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Automação Python</h3>
+            <p class="paragrafo-projetos">Automatização de processos em Python</p>
+          </div>
         </div>
 
         <div class="projetos-card">
@@ -88,22 +92,28 @@
             alt="Projeto 2"
             class="projetos-imagem"
           />
-          <h3 class="info-projetos">Nutrição Todo Dia</h3>
-          <p class="paragrafo-projetos">Site com dicas de alimentação.</p>
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Nutrição Todo Dia</h3>
+            <p class="paragrafo-projetos">Site com dicas de alimentação.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contatos" class="contatos">
-      <h2 class="contatos-titulo">Contatos</h2>
+      <h2 class="contatos-titulo">Entre em Contato</h2>
       <form class="formulario-contato" id="formulario">
         <div class="grupo-form">
           <input placeholder="Nome" class="campo-form"/>
         </div>
+
         <div class="grupo-form">
-          <textarea class="text-form" placeholder="Digite sua Mensagem"></textarea>
+          <textarea class="campo-form" placeholder="Digite sua Mensagem"></textarea>
         </div>
+
+        <button type="submit" class="botao-form">Enviar WhatsApp</button>
       </form>
+
     </section>
 
     <footer>
