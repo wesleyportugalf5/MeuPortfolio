@@ -7,6 +7,8 @@
     <title>Meu Portfólio</title>
   </head>
   <body>
+    <div class="particulas"></div>
+
     <nav class="navegacao">
       <ul class="menu">
         <li>
@@ -82,7 +84,9 @@
           />
           <div class="caixa-textos-projeto">
             <h3 class="info-projetos">Automação Python</h3>
-            <p class="paragrafo-projetos">Automatização de processos em Python</p>
+            <p class="paragrafo-projetos">
+              Automatização de processos em Python
+            </p>
           </div>
         </div>
 
@@ -102,22 +106,48 @@
 
     <section id="contatos" class="contatos">
       <h2 class="contatos-titulo">Entre em Contato</h2>
-      <form class="formulario-contato" id="formulario">
+
+      <form
+        class="formulario-contato"
+        id="formulario"
+        onsubmit="enviarWhats(event)"
+      >
         <div class="grupo-form">
-          <input placeholder="Nome" class="campo-form"/>
+          <input placeholder="Nome" class="campo-form" id="nome" />
         </div>
 
         <div class="grupo-form">
-          <textarea class="campo-form" placeholder="Digite sua Mensagem"></textarea>
+          <textarea
+            class="campo-form"
+            placeholder="Digite sua Mensagem"
+            rows="6"
+            id="mensagem"
+          ></textarea>
         </div>
 
         <button type="submit" class="botao-form">Enviar WhatsApp</button>
       </form>
-
     </section>
 
     <footer>
       <p>Site criado por Wesley Portugal</p>
     </footer>
+
+    <script>
+      function enviarWhats(event) {
+        event.preventDefault();
+
+        const nome = document.getElementById("nome").value;
+        const mensagem = document.getElementById("mensagem").value;
+        const telefone = "5519991750196";
+
+        const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+        const msgFormatada = encodeURIComponent(texto);
+
+        const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+        window.open(url, "_blank");
+      }
+    </script>
   </body>
 </html>
