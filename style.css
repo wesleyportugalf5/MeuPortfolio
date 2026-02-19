@@ -47,17 +47,13 @@ html {
 } 
 
 .cabecalho {
-    /* min-height: 100vh; */
+    min-height: 100vh;
     display: flex;
-    margin-top: 50px;
     gap: 0px 150px;
     justify-content: center;
     align-items: center;
+    padding-bottom: 60px;
 }
-
-/* .containerFotoPerfil {
-    background-color: red;
-} */
 
 .foto-perfil {
     max-width: 350px;
@@ -73,11 +69,6 @@ html {
     align-items: center;
 }
 
-.foto-sobre {
-    max-width: 350px;
-    border-radius: 30%;
-    border: 2px solid black;
-}
 
 h1 {
     margin-bottom: 5px;
@@ -91,7 +82,22 @@ h1 {
 }
 
 .sobre {
-    padding: 6rem 2rem;
+    display: flex;
+    min-height: 100vh;
+    background-color: rgba(27, 27, 209, 0.034);
+}
+
+.containerFotoSobre {
+    width: 2000px;
+    height: 100vh;
+    background-color: black;
+}
+
+.containerSobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
 }
 
 .sobre-titulo {
@@ -101,20 +107,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-.sobre-caixa {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 16px;
-}
-
 .sobre-paragrafo {
     text-align: center;
     font-size: 1.2rem;
 }
 
 .projetos {
-    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .projetos-caixa {
@@ -165,7 +167,23 @@ h1 {
 }
 
 .contatos {
-    padding: 6rem 2rem;
+    display: flex;
+    min-height: 100vh;
+    background-color: rgba(27, 27, 209, 0.034);
+}
+
+.containerFotoContatos {
+    width: 800px;
+    height: 100vh;
+    background-color: black;
+}
+
+.containerContatos {
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contatos-titulo {
@@ -175,12 +193,11 @@ h1 {
 }
 
 .formulario-contato {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 500px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
     padding: 2rem;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 16px;
 }
 
@@ -192,8 +209,6 @@ h1 {
     border: 1px solid black;
     outline: none;
 }
-
-
 
 .campo-form:focus {
     border-color: black;
